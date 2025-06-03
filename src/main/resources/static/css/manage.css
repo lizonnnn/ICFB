@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+/* 容器 */
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 顶部导航栏 */
+.sdhl {
+    width: 100%;
+    height: 10vh;
+    background-color: #bdc3c7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.tb img {
+    max-height: 80%;
+    border-radius: 4px;
+}
+
+.username {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+/* 主容器（左侧导航栏 + 主内容） */
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+/* 左侧导航栏 */
+.zdhl {
+    width: 15vw;
+    background-color: #f0f0f0;
+    border-right: 2px solid #2c3e50;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2vh;
+}
+
+.zdhl div {
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 2vw;
+    color: #2c3e50;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.zdhl div:hover {
+    background-color: #34495e;
+    color: white;
+}
+
+/* 主内容区域 */
+.zt {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vh 2vw;
+    gap: 2vw;
+    overflow-y: auto;
+}
+
+.ip, .fm {
+    width: 45%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2vh;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 输入框和按钮 */
+.ip input[type="text"] {
+    width: 60%;
+    padding: 1vh;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    font-size: 1.5vw;
+}
+
+.ip button {
+    width: 15%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ip button:hover {
+    background-color: #2980b9;
+}
+
+/* 弹窗样式 */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 2vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal input {
+    width: 80%;
+    padding: 1vh;
+    border-radius: 4px;
+    border: 1px solid #bdc3c7;
+    font-size: 1.5vw;
+    margin-bottom: 2vh;
+}
+
+.modal button {
+    width: 15%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background-color: #2980b9;
+}
+
+/* 分页按钮 */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2vh;
+}
+
+.pagination button {
+    padding: 1vh 4vw;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.5vw;
+}
+
+.pagination button:hover {
+    background-color: #bdc3c7;
+}
+
+.pagination button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+#img{
+    width: 9vh;
+    height: 9vh;
+}
+
+#zck{
+    background-color: #bfcfcf;
+    cursor: not-allowed;
+}
+
+#clickableDiv1{
+    background-color: #bfcfcf;
+    cursor: not-allowed;
+}
+
+#clickableDiv2{
+    background-color: #bfcfcf;
+    cursor: not-allowed;
+}
+
+#clickableDiv3{
+    background-color: #bfcfcf;
+    cursor: not-allowed;
+}
+
+#searchInput{
+
+}
