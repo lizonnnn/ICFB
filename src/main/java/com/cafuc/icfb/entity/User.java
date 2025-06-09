@@ -1,4 +1,4 @@
-package com.cafuc.dsdr.entity;
+package com.cafuc.icfb.entity;
 
 import lombok.*;
 

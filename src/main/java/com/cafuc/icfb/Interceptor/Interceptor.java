@@ -1,4 +1,4 @@
-package com.cafuc.dsdr.Interceptor;
+package com.cafuc.icfb.Interceptor;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

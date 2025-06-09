@@ -1,28 +1,20 @@
-package com.cafuc.dsdr.controller;
+package com.cafuc.icfb.controller;
 
-import com.cafuc.dsdr.DAO.UserDao;
-import com.cafuc.dsdr.entity.User;
-import com.cafuc.dsdr.service.UserService;
-import jakarta.annotation.Nullable;
-import jakarta.servlet.http.Cookie;
+import com.cafuc.icfb.entity.User;
+import com.cafuc.icfb.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
-import java.util.List;
 
 @Controller
 public class LoginController {
     @Autowired
     UserService userService;
     @RequestMapping("/login")
-    public ModelAndView cUserLogin(){
+    public ModelAndView UserLogin(){
         ModelAndView modelAndView = new ModelAndView("login");
         return modelAndView;
     }
@@ -45,14 +37,23 @@ public class LoginController {
             HttpServletRequest request
     ){
         HttpSession session=request.getSession(true);
-        String user=userService.getUserByUaP(username,password);
-
-        if(user!=null){
-            session.setAttribute("username", user);
-            return "ip";
+        User localuser=userService.LoginService(username,password);
+        String localusername= localuser.getUsername();
+        Integer localid=localuser.getId();
+        if(localuser!=null){
+            session.setAttribute("username", localusername);
+            session.setAttribute("id", localid);
+            return "error";//这里应是正常功能界面，error暂代
         }
         else{
             return "loginerror";
         }
+    }
+    @RequestMapping("/logoutfunc")
+    public String UserLogout(
+            @RequestParam("username") String username,
+            HttpServletRequest request
+    ){
+        return "";
     }
 }

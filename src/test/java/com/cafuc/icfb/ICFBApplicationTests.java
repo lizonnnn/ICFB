@@ -1,10 +1,10 @@
-package com.cafuc.dsdr;
+package com.cafuc.icfb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DsdrApplicationTests {
+class ICFBApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,13 +1,9 @@
-package com.cafuc.dsdr.Interceptor;
+package com.cafuc.icfb.Interceptor;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.web.servlet.HandlerInterceptor;
-
-import java.io.IOException;
-import java.io.PrintWriter;
 
 public class LoginInterceptor implements HandlerInterceptor {
 

@@ -1,4 +1,4 @@
-package com.cafuc.dsdr.controller;
+package com.cafuc.icfb.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

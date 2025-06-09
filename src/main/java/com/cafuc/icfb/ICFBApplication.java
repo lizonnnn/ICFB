@@ -1,13 +1,12 @@
-package com.cafuc.dsdr;
+package com.cafuc.icfb;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
-public class DsdrApplication {
+public class ICFBApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DsdrApplication.class, args);
+        SpringApplication.run(ICFBApplication.class, args);
     }
 
 }
