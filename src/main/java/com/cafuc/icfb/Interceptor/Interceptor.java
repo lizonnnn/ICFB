@@ -20,8 +20,10 @@ public class Interceptor implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         // 添加一个拦截器，排除登录url
+        /*
         registry.addInterceptor(loginInterceptor())
                 .addPathPatterns("/**").excludePathPatterns("/index","/login","/static/**","/loginfunc","/loginerror");
         registry.addInterceptor(ipInterceptor()).addPathPatterns("/**");
+         */
     }
 }

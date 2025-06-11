@@ -14,17 +14,26 @@ public class UserService {
     public User LoginService(String username,String password) {
         List<User> userlist = userDao.getUserByUaP(username, password);
         if (!userlist.isEmpty()) {
+
             return userlist.get(0);
         } else
             return null;
     }
-    public Integer RegisterService(String username,String password) {
+    // 注册服务：注册成功返回1，用户名已存在返回0
+    public Integer RegisterService(String username, String password, String email) {
+        // 查重（看用户名是否已存在）
+        List<User> userList = userDao.getUserList();
+        for (User u : userList) {
+            if (u.getUsername().equals(username)) {
+                return 0; // 用户名已存在
+            }
+        }
+        return userDao.addUser(username, password, email); // 插入成功返回 1
+    }
+    public Integer LogoutService(Integer id ) {//登出
         return 0;
     }
-    public Integer LogoutService(String username,String password) {//登出
-        return 0;
-    }
-    public Integer WorkoutService(String username,String password) {//注销
+    public Integer WorkoutService(Integer id) {//注销
         return 0;
     }
 

@@ -6,9 +6,16 @@
 <mapper namespace="com.cafuc.icfb.DAO.UserDao">
     <!--select查询语句-->
     <select id="getUserList" resultType="com.cafuc.icfb.entity.User">
-        select * from dsdruser;
+        select * from user;
     </select>
     <select id="getUserByUaP" resultType="com.cafuc.icfb.entity.User">
-        select * from dsdruser where username=#{username} and password=#{password};
+        select * from user where username=#{username} and password=#{password};
     </select>
+    <delete id="deleteUserById">
+        delete from user where id=#{id};
+    </delete>
+    <insert id="addUser" parameterType="String">
+        INSERT INTO user (username, password, email)
+        VALUES (#{username}, #{password}, #{email});
+    </insert>
 </mapper>

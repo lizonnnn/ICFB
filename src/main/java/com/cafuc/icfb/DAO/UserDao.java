@@ -8,7 +8,7 @@ import java.util.List;
 public interface UserDao {
     List<User> getUserList();
     List<User> getUserByUaP(String username,String password);
-    Integer addUser(User user);
+    Integer addUser(String username,String  password,String email);
     Integer deleteUserById(Integer id);
 }
 

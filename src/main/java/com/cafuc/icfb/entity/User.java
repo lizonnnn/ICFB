@@ -2,10 +2,9 @@ package com.cafuc.icfb.entity;
 
 import lombok.*;
 
-@Getter
-@Setter
 @Data
 @RequiredArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 public class User {
     private int id;  //id
@@ -13,6 +12,7 @@ public class User {
     private String username;   //姓名
     @NonNull
     private String password;   //密码
+    @NonNull
     private String email;
 
 }

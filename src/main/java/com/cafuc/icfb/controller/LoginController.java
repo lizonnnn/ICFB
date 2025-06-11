@@ -13,11 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 public class LoginController {
     @Autowired
     UserService userService;
-    @RequestMapping("/login")
-    public ModelAndView UserLogin(){
-        ModelAndView modelAndView = new ModelAndView("login");
-        return modelAndView;
-    }
     @RequestMapping("/loginerror")
     public ModelAndView cUserLoginError(){
         ModelAndView modelAndView = new ModelAndView("login");
@@ -28,6 +23,10 @@ public class LoginController {
     @ResponseBody
     public String getUsername(HttpServletRequest request){
         HttpSession session=request.getSession(false);
+        if(session==null)
+        {
+            return "";
+        }
         return session.getAttribute("username").toString();
     }
     @RequestMapping("/loginfunc")
@@ -38,22 +37,16 @@ public class LoginController {
     ){
         HttpSession session=request.getSession(true);
         User localuser=userService.LoginService(username,password);
-        String localusername= localuser.getUsername();
-        Integer localid=localuser.getId();
         if(localuser!=null){
+            String localusername= localuser.getUsername();
+            Integer localid=localuser.getId();
+            System.out.println(localuser.toString());
             session.setAttribute("username", localusername);
             session.setAttribute("id", localid);
-            return "error";//这里应是正常功能界面，error暂代
+            return "center";//这里应是正常功能界面，error暂代
         }
         else{
             return "loginerror";
         }
-    }
-    @RequestMapping("/logoutfunc")
-    public String UserLogout(
-            @RequestParam("username") String username,
-            HttpServletRequest request
-    ){
-        return "";
     }
 }
