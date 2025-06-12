@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.cafuc.icfb.DAO.UserDao">
+    <!--select查询语句-->
+    <select id="getUserList" resultType="com.cafuc.icfb.entity.User">
+        select * from user;
+    </select>
+    <select id="getUserByUaP" resultType="com.cafuc.icfb.entity.User">
+        select * from user where username=#{username} and password=#{password};
+    </select>
+    <delete id="deleteUserById" parameterType="Integer">
+        delete from user where id=#{id};
+    </delete>
+    <insert id="addUser" parameterType="String">
+        INSERT INTO user (username, password, email)
+        VALUES (#{username}, #{password}, #{email});
+    </insert>
+    <select id="getUserById" parameterType="Integer">
+        Select * FROM user where id = #{id}
+    </select>
+</mapper>
