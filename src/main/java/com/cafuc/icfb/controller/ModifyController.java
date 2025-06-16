@@ -35,15 +35,19 @@ public class ModifyController {
             if(email ==""){
                 email=user.getEmail();
             }
-            userService.WorkoutService(session);
-            if(userService.RegisterService(username,password,email)==1) {
-                ModelAndView modelAndView = new ModelAndView("center");
-                return modelAndView;
+            if(userService.WorkoutService(session)==1){
+                if(userService.RegisterService(username,password,email)==1) {
+                    ModelAndView modelAndView = new ModelAndView("center");
+                    userService.LoginService(username,password);
+                    return modelAndView;
+                }
             }
             else{
                 ModelAndView modelAndView = new ModelAndView("center");
                 return modelAndView;
             }
+            ModelAndView modelAndView = new ModelAndView("center");
+            return modelAndView;
         };
         @RequestMapping("/modify")
         public ModelAndView UserModify(){

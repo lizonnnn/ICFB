@@ -5,111 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人中心</title>
     <style>
-        :root {
-            --primary-bg: #2c3e50;
-            --secondary-bg: #f4f4f4;
-            --text-color: #333;
-            --primary-red: #e74c3c;
-            --hover-red: #c0392b;
-            --modal-bg: rgba(0,0,0,0.4);
-        }
+            :root {
+                --primary-bg: #2c3e50;
+                --secondary-bg: #f4f4f4;
+                --text-color: #333;
+                --primary-red: #e74c3c;
+                --hover-red: #c0392b;
+                --modal-bg: rgba(0,0,0,0.4);
+            }
 
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e9ecef;
-        }
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #e9ecef;
+            }
 
-        .header {
-            background-color: var(--primary-bg);
-            color: white;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-        }
+            .header {
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+            }
 
-        .avatar img {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: 10px;
-            border: 2px solid white;
-            object-fit: cover;
-        }
+            .avatar img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right: 10px;
+                border: 2px solid white;
+                object-fit: cover;
+            }
 
-        .actions a {
-            color: white;
-            margin-left: 20px;
-            text-decoration: none;
-            padding: 8px 15px;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
+            .actions a {
+                color: white;
+                margin-left: 20px;
+                text-decoration: none;
+                padding: 8px 15px;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+            }
 
-        .actions a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
+            .actions a:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
 
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: var(--modal-bg);
-        }
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: var(--modal-bg);
+            }
 
-        .modal-content {
-            background-color: #fefefe;
-            margin: 15% auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 300px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 300px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
 
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
 
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
 
-        button {
-            background-color: var(--primary-red);
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
+            button {
+                background-color: var(--primary-red);
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
 
-        button:hover {
-            background-color: var(--hover-red);
-        }
+            button:hover {
+                background-color: var(--hover-red);
+            }
 
-        /* 新增加载状态样式 */
-        .loading-indicator {
-            font-size: 0.9em;
-            color: #999;
-            margin-left: 10px;
-        }
-    </style>
+            /* 新增加载状态样式 */
+            .loading-indicator {
+                font-size: 0.9em;
+                color: #999;
+                margin-left: 10px;
+            }
+        </style>
 </head>
 <body>
     <div class="header">
@@ -123,7 +123,7 @@
         <div class="actions">
             <a href="javascript:void(0);" onclick="openModal()">账号注销</a>
             <a href="/modify">个人信息修改</a>
-            <a href="index.html">返回首页</a>
+            <a href="/logoutfunc">账户登出</a>
         </div>
     </div>
 
@@ -149,7 +149,7 @@
             if (confirm('确定要注销账号吗？')) {
                 // 实际应调用注销接口
                 alert('账号已注销');
-                window.location.href = 'login.html';
+                window.location.href = '/cancel';
             }
         }
 

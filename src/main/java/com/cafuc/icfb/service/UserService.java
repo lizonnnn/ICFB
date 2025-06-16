@@ -52,8 +52,8 @@ public class UserService {
             session.invalidate();// 清除所有 Session 数据
             return 1;
         }
-        // 3. 重定向到登录页（login.html）
-        return 0;// 重定向到登录页（login.html）
+        // 3. 重定向到登录页（login.ftl）
+        return 0;// 重定向到登录页（login.ftl）
     }
 
 }

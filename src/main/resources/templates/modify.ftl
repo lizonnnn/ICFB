@@ -5,97 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人信息修改</title>
     <style>
-        /* 原有样式保持不变 */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .form-container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            width: 350px;
-        }
-        /* 新增响应样式 */
-        .form-group {
-            margin-bottom: 15px;
-            position: relative;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ced4da;
-            border-radius: 4px;
-            transition: border-color 0.3s;
-        }
-        .form-group input:focus {
-            border-color: #007BFF;
-            outline: none;
-            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-        }
-        .form-group small {
-            color: #dc3545;
-            position: absolute;
-            bottom: -18px;
-            left: 0;
-            font-size: 0.8em;
-            display: none;
-        }
-        .form-group.invalid small {
-            display: block;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            margin-bottom: 15px;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        .back-link {
-            display: block;
-            text-align: center;
-            color: #007BFF;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        .back-link:hover {
-            color: #0056b3;
-        }
-        .response-message {
-            padding: 10px;
-            margin-bottom: 15px;
-            border-radius: 4px;
-            display: none;
-        }
-        .success {
-            background-color: #d4edda;
-            color: #155724;
-            border: 1px solid #c3e6cb;
-        }
-        .error {
-            background-color: #f8d7da;
-            color: #721c24;
-            border: 1px solid #f5c6cb;
-        }
-    </style>
+     /* 全局样式重置 */
+     * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Arial', sans-serif;
+     }
+
+     /* 页面背景样式 */
+     body {
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-size: cover;
+     background-attachment: fixed;
+     }
+
+     /* 表单容器样式 */
+     .form-container {
+     width: 100%;
+     max-width: 450px;
+     padding: 40px;
+     background-color: rgba(255, 255, 255, 0.95);
+     border-radius: 10px;
+     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+     transition: all 0.3s ease;
+     }
+
+     /* 鼠标悬停时表单容器效果 */
+     .form-container:hover {
+     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+     transform: translateY(-5px);
+     }
+
+     /* 标题样式 */
+     h2 {
+     text-align: center;
+     margin-bottom: 30px;
+     color: #333;
+     font-size: 28px;
+     font-weight: 600;
+     }
+
+     /* 表单组样式 */
+     .form-group {
+     margin-bottom: 20px;
+     position: relative;
+     }
+
+     /* 表单标签样式 */
+     .form-group label {
+     display: block;
+     margin-bottom: 8px;
+     color: #555;
+     font-size: 14px;
+     font-weight: 500;
+     }
+
+     /* 表单输入框样式 */
+     .form-group input {
+     width: 100%;
+     padding: 12px 15px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-size: 16px;
+     transition: all 0.3s;
+     background-color: #f9f9f9;
+     }
+
+     /* 表单输入框聚焦效果 */
+     .form-group input:focus {
+     border-color: #4facfe;
+     box-shadow: 0 0 0 3px rgba(79, 172, 254, 0.2);
+     outline: none;
+     background-color: #fff;
+     }
+
+     /* 错误提示样式 */
+     .form-group small {
+     color: #e74c3c;
+     position: absolute;
+     bottom: -18px;
+     left: 0;
+     font-size: 0.8em;
+     display: none;
+     }
+
+     .form-group.invalid small {
+     display: block;
+     }
+
+     /* 按钮样式 */
+     button {
+     width: 100%;
+     padding: 12px;
+     background: linear-gradient(to right, #667eea 0%, #764ba2);
+     border: none;
+     border-radius: 5px;
+     color: white;
+     font-size: 16px;
+     font-weight: 600;
+     cursor: pointer;
+     transition: all 0.3s;
+     margin-top: 10px;
+     }
+
+     /* 按钮悬停效果 */
+     button:hover {
+     background: linear-gradient(to right, #3ca0f0, #00d9e6);
+     box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+     }
+
+     /* 返回链接样式 */
+     .back-link {
+     display: block;
+     text-align: center;
+     margin-top: 20px;
+     color: #4facfe;
+     text-decoration: none;
+     transition: color 0.3s;
+     }
+
+     .back-link:hover {
+     color: #00a8ff;
+     text-decoration: underline;
+     }
+
+     /* 响应消息样式 */
+     .response-message {
+     padding: 10px;
+     margin-bottom: 15px;
+     border-radius: 4px;
+     display: none;
+     }
+
+     .success {
+     background-color: #d4edda;
+     color: #155724;
+     border: 1px solid #c3e6cb;
+     }
+
+     .error {
+     background-color: #f8d7da;
+     color: #721c24;
+     border: 1px solid #f5c6cb;
+     }
+
+     /* 响应式设计 - 在小屏幕上调整样式 */
+     @media (max-width: 480px) {
+     .form-container {
+     padding: 30px 20px;
+     margin: 0 15px;
+     }
+
+     h2 {
+     font-size: 24px;
+     margin-bottom: 20px;
+     }
+     }
+     </style>
 </head>
 <body>
     <div class="form-container">
         <h2>个人信息修改</h2>
-        <form id="profileForm">
+        <form id="profileForm" action="/modifyfunc" method="POST">
             <div class="form-group">
                 <label for="username">用户名</label>
                 <input type="text" id="username" name="username" required minlength="2">
@@ -155,44 +231,6 @@
             formGroup.classList.add('invalid');
             formGroup.querySelector('small').textContent = message;
         }
-
-        // 提交处理
-        form.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            if (!validateForm()) return;
-
-            const formData = {
-                username: document.getElementById('username').value.trim(),
-                email: document.getElementById('email').value.trim()
-            };
-
-            try {
-                const response = await fetch('/api/user/update', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(formData)
-                });
-
-                const result = await response.json();
-
-                if (response.ok) {
-                    showMessage('success', '信息更新成功！');
-                    
-                    // 3秒后自动返回个人中心
-                    setTimeout(() => {
-                        window.location.href = 'personal_center.html?refresh';
-                    }, 3000);
-                } else {
-                    showMessage('error', result.message || '更新失败，请重试');
-                }
-            } catch (error) {
-                showMessage('error', '网络错误，请检查连接');
-                console.error('提交失败:', error);
-            }
-        });
 
         // 显示响应消息
         function showMessage(type, message) {

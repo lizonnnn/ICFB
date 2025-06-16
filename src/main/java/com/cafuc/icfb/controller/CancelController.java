@@ -1,7 +1,5 @@
 package com.cafuc.icfb.controller;
 
-import com.cafuc.icfb.DAO.UserDao;
-import com.cafuc.icfb.entity.User;
 import com.cafuc.icfb.service.UserService;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class CancelControl {
+public class CancelController {
 
     @Autowired
     private UserService userService;
