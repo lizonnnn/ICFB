@@ -35,4 +35,8 @@ public class BuildingService {
         }
         return buildingDao.addBuilding(buildname, introduction); // 插入成功返回 1
     }
+
+    public Integer WorkoutService(String buildname) {
+        return buildingDao.deleteBuilding(buildname);
+    }
 }

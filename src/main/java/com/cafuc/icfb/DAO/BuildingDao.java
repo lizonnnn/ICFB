@@ -10,4 +10,5 @@ public interface BuildingDao {
     List<Building> getBuildingListAll();
     List<Building> getBuildingList(int pagesize, int offset);
     Integer addBuilding(String buildname,String introduction);
+    Integer deleteBuilding(String buildname);
 }
