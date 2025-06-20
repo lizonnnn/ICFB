@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.cafuc.icfb.DAO.ActivityDao">
+    <!--select查询语句-->
+    <select id="getActivitiesListAll" resultType="com.cafuc.icfb.entity.Activity">
+        select * from capture_activities;
+    </select>
+    <select id="getActivitiesList" resultType="com.cafuc.icfb.entity.Activity">
+        SELECT * FROM capture_activities
+        LIMIT #{pagesize} OFFSET #{offset};
+    </select>
+    <insert id="addActivity">
+        INSERT INTO capture_activities (building_id, Acquisition_name, time)
+        VALUES (#{param1}, #{param2}, #{param3});
+    </insert>
+    <delete id="deleteActivity" parameterType="String">
+        delete from capture_activities where Acquisition_name=#{acquisitionname};
+    </delete>
+    <select id="MatchActivityName" resultType="com.cafuc.icfb.entity.Activity">
+        SELECT * FROM capture_activities
+        WHERE building_id = #{buildingId}
+    </select>
+</mapper>

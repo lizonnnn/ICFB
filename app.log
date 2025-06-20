@@ -1,143 +1,496 @@
-2025-06-17 19:27:02 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-17 19:27:03 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-06-17 19:27:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-06-17 19:27:03 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-06-17 19:41:27 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 22572 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
-2025-06-17 19:41:27 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
-2025-06-17 19:41:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-17 19:41:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-06-17 19:41:29 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
-2025-06-17 19:41:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-06-17 19:41:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-06-17 19:41:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-06-17 19:41:30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-06-17 19:41:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2943 ms
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteUserById] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
-2025-06-17 19:41:31 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
-2025-06-17 19:41:31 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
-2025-06-17 19:41:31 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
-2025-06-17 19:41:31 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-06-17 19:41:32 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-06-17 19:41:33 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
-2025-06-17 19:41:33 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-06-17 19:41:33 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 6.184 seconds (process running for 6.845)
-2025-06-17 19:51:58 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-17 19:51:59 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-06-17 19:52:09 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 13152 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
-2025-06-17 19:52:09 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
-2025-06-17 19:52:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-17 19:52:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-06-17 19:52:10 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
-2025-06-17 19:52:11 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-06-17 19:52:11 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-06-17 19:52:11 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-06-17 19:52:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-06-17 19:52:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2655 ms
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
-2025-06-17 19:52:12 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
-2025-06-17 19:52:12 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
-2025-06-17 19:52:12 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
-2025-06-17 19:52:12 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-06-17 19:52:13 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-06-17 19:52:13 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
-2025-06-17 19:52:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-06-17 19:52:14 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 5.896 seconds (process running for 6.556)
-2025-06-17 19:52:23 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-17 19:52:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4161a7a5
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7ed17bbf
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-06-17 19:52:23 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/register", parameters={}
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.RegisterController#registerPage()
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [register], model {}
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [register.ftl]
-2025-06-17 19:52:23 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-06-17 19:52:28 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
-2025-06-17 19:52:28 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.IndexController#Index()
-2025-06-17 19:52:28 [http-nio-8080-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-2025-06-17 19:52:28 [http-nio-8080-exec-2] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [login], model {}
-2025-06-17 19:52:28 [http-nio-8080-exec-2] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [login.ftl]
-2025-06-17 19:52:28 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-06-17 19:53:30 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/DeleteBuilding?buildname=%27333%27", parameters={masked}
-2025-06-17 19:53:30 [http-nio-8080-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.BuildingDelController#delBuilding(String)
-2025-06-17 19:53:30 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-06-17 19:53:31 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3476cc1c
-2025-06-17 19:53:31 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-06-17 19:53:31 [http-nio-8080-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-2025-06-17 19:53:31 [http-nio-8080-exec-5] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [login], model {}
-2025-06-17 19:53:31 [http-nio-8080-exec-5] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [login.ftl]
-2025-06-17 19:53:31 [http-nio-8080-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-06-17 19:56:47 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-17 19:56:47 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-06-17 19:56:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-06-17 19:56:47 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-06-17 19:56:59 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 3308 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
-2025-06-17 19:56:59 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
-2025-06-17 19:57:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2025-06-17 19:57:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2025-06-17 19:57:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-2025-06-17 19:57:02 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2025-06-17 19:57:02 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-06-17 19:57:02 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
-2025-06-17 19:57:02 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-06-17 19:57:02 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2607 ms
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:02 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
-2025-06-17 19:57:03 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
-2025-06-17 19:57:03 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 21 mappings in 'requestMappingHandlerMapping'
-2025-06-17 19:57:03 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
-2025-06-17 19:57:03 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2025-06-17 19:57:03 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2025-06-17 19:57:04 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
-2025-06-17 19:57:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2025-06-17 19:57:04 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 5.911 seconds (process running for 6.531)
-2025-06-17 19:57:24 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-06-17 19:57:24 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2025-06-17 19:57:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
-2025-06-17 19:57:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
-2025-06-17 19:57:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
-2025-06-17 19:57:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@98d67d4
-2025-06-17 19:57:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@576a138f
-2025-06-17 19:57:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2025-06-17 19:57:24 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2025-06-17 19:57:24 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/DeleteBuilding?buildname=%27123%27", parameters={masked}
-2025-06-17 19:57:24 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.BuildingDelController#delBuilding(String)
-2025-06-17 19:57:24 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-06-17 19:57:25 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@406bd6c3
-2025-06-17 19:57:25 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-06-17 19:57:25 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
-2025-06-17 19:57:25 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [error], model {}
-2025-06-17 19:57:25 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [error.ftl]
-2025-06-17 19:57:25 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
-2025-06-17 19:58:57 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-06-17 19:58:58 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-06-17 19:58:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-06-17 19:58:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-20 18:35:18 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 13856 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
+2025-06-20 18:35:18 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
+2025-06-20 18:35:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-20 18:35:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-20 18:35:20 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 0 Redis repository interfaces.
+2025-06-20 18:35:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-20 18:35:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-20 18:35:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-06-20 18:35:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-20 18:35:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3160 ms
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesList] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.addActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.deleteActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListfuzzy] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.fuzzySearchByName] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.MatchBuildingName] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:22 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 18:35:23 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
+2025-06-20 18:35:23 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 28 mappings in 'requestMappingHandlerMapping'
+2025-06-20 18:35:23 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2025-06-20 18:35:23 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-20 18:35:23 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-20 18:35:24 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
+2025-06-20 18:35:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-20 18:35:24 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 6.681 seconds (process running for 7.435)
+2025-06-20 18:40:03 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 18:40:03 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7f12baa1
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7adfcdd3
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-20 18:40:03 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/activitiesbuildingnum?Acquisitionname=%E4%B8%89%E6%98%9F%E5%A0%86%E5%BF%97%E6%84%BF%E6%B4%BB%E5%8A%A8", parameters={masked}
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.ActivitiesListController#activitiesbuildingnum(String)
+2025-06-20 18:40:03 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-20 18:40:03 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40ec37f9
+2025-06-20 18:40:03 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[中飞院1教, "二教"]]
+2025-06-20 18:40:03 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-20 18:43:37 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/activitiesbuildingnum?Acquisitionname=%E4%B8%89%E6%98%9F%E5%A0%86%E5%BF%97%E6%84%BF%E6%B4%BB%E5%8A%A8", parameters={masked}
+2025-06-20 18:43:37 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.ActivitiesListController#activitiesbuildingnum(String)
+2025-06-20 18:43:37 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-06-20 18:43:37 [http-nio-8080-exec-4] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[中飞院1教, "二教"]]
+2025-06-20 18:43:37 [http-nio-8080-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-20 19:07:44 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20 19:07:44 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-20 19:07:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-20 19:07:44 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-20 19:07:50 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 15736 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
+2025-06-20 19:07:50 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
+2025-06-20 19:07:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-20 19:07:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-20 19:07:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2025-06-20 19:07:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-20 19:07:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-20 19:07:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-06-20 19:07:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-20 19:07:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2526 ms
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.addActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.deleteActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.MatchActivityName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListfuzzy] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.fuzzySearchByName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.MatchBuildingName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:07:53 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
+2025-06-20 19:07:54 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'buildingSearchController' method 
+com.cafuc.icfb.controller.BuildingListController#activitiesbuildingnum(String)
+to { [/activitiesbuildingnum]}: There is already 'activitiesListController' bean method
+com.cafuc.icfb.controller.ActivitiesListController#activitiesbuildingnum(String) mapped.
+2025-06-20 19:07:54 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-06-20 19:07:54 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-20 19:07:54 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'buildingSearchController' method 
+com.cafuc.icfb.controller.BuildingListController#activitiesbuildingnum(String)
+to { [/activitiesbuildingnum]}: There is already 'activitiesListController' bean method
+com.cafuc.icfb.controller.ActivitiesListController#activitiesbuildingnum(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1812)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.cafuc.icfb.ICFBApplication.main(ICFBApplication.java:9)
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'buildingSearchController' method 
+com.cafuc.icfb.controller.BuildingListController#activitiesbuildingnum(String)
+to { [/activitiesbuildingnum]}: There is already 'activitiesListController' bean method
+com.cafuc.icfb.controller.ActivitiesListController#activitiesbuildingnum(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:675)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:637)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:509)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1859)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	... 18 common frames omitted
+2025-06-20 19:09:32 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 24004 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
+2025-06-20 19:09:32 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
+2025-06-20 19:09:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-20 19:09:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-20 19:09:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2025-06-20 19:09:35 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-20 19:09:35 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-20 19:09:35 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-06-20 19:09:35 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-20 19:09:35 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2486 ms
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.addActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.deleteActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.MatchActivityName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListfuzzy] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.fuzzySearchByName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.MatchBuildingName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:35 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:09:36 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
+2025-06-20 19:09:36 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 28 mappings in 'requestMappingHandlerMapping'
+2025-06-20 19:09:36 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2025-06-20 19:09:36 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-20 19:09:36 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-20 19:09:37 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
+2025-06-20 19:09:37 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-20 19:09:37 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 5.78 seconds (process running for 6.469)
+2025-06-20 19:10:43 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 19:10:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-20 19:10:43 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-20 19:10:43 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-20 19:10:43 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-20 19:10:43 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@68c9dffb
+2025-06-20 19:10:43 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@55851301
+2025-06-20 19:10:43 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-20 19:10:43 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-06-20 19:10:43 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/activitiesbuildingnum?buildingname=%E4%B8%AD%E9%A3%9E%E9%99%A21%E6%95%99", parameters={masked}
+2025-06-20 19:10:43 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.BuildingListController#activitiesbuildingnum(String)
+2025-06-20 19:10:43 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-20 19:10:43 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a578942
+2025-06-20 19:10:43 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-20 19:10:44 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-06-20 19:10:44 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[三星堆志愿活动]]
+2025-06-20 19:10:44 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-20 19:13:21 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20 19:13:21 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-20 19:13:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-20 19:13:21 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-20 19:13:25 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 25620 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
+2025-06-20 19:13:25 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
+2025-06-20 19:13:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-20 19:13:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-20 19:13:26 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+2025-06-20 19:13:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-20 19:13:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-20 19:13:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-06-20 19:13:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-20 19:13:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2507 ms
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.addActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.deleteActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.MatchActivityName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListfuzzy] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.fuzzySearchByName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.MatchBuildingName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:28 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:13:29 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
+2025-06-20 19:13:29 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 28 mappings in 'requestMappingHandlerMapping'
+2025-06-20 19:13:29 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2025-06-20 19:13:29 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-20 19:13:29 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-20 19:13:30 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
+2025-06-20 19:13:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-20 19:13:30 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 5.954 seconds (process running for 6.64)
+2025-06-20 19:14:06 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 19:14:06 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-20 19:14:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-20 19:14:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-20 19:14:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-20 19:14:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2d1672cc
+2025-06-20 19:14:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@197f0d32
+2025-06-20 19:14:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-20 19:14:06 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-06-20 19:14:06 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/activitiesbuildingnum?buildingname=%E4%B8%AD%E9%A3%9E%E9%99%A21%E6%95%99", parameters={masked}
+2025-06-20 19:14:06 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.BuildingListController#activitiesbuildingnum(String)
+2025-06-20 19:14:06 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-20 19:14:07 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@28433369
+2025-06-20 19:14:07 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-20 19:14:07 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Failed to complete request: org.mybatis.spring.MyBatisSystemException
+2025-06-20 19:14:07 [http-nio-8080-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.mybatis.spring.MyBatisSystemException] with root cause
+org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:81)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:425)
+	at jdk.proxy2/jdk.proxy2.$Proxy67.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:87)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:152)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89)
+	at jdk.proxy2/jdk.proxy2.$Proxy68.MatchActivityName(Unknown Source)
+	at com.cafuc.icfb.service.BuildingService.matchActivity(BuildingService.java:70)
+	at com.cafuc.icfb.controller.BuildingListController.activitiesbuildingnum(BuildingSearchController.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:142)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:82)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-06-20 19:14:07 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error?buildingname=%E4%B8%AD%E9%A3%9E%E9%99%A21%E6%95%99", parameters={masked}
+2025-06-20 19:14:07 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2025-06-20 19:14:07 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+2025-06-20 19:14:07 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - View name [error], model {timestamp=Fri Jun 20 19:14:07 CST 2025, status=500, error=Internal Server Error, path=/activitiesbuildingnum}
+2025-06-20 19:14:07 [http-nio-8080-exec-1] DEBUG o.s.w.s.v.freemarker.FreeMarkerView - Rendering [error.ftl]
+2025-06-20 19:14:07 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 500
+2025-06-20 19:20:17 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20 19:20:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-20 19:20:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-20 19:20:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-20 19:21:49 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 25200 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
+2025-06-20 19:21:49 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
+2025-06-20 19:21:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-20 19:21:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-20 19:21:51 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 24 ms. Found 0 Redis repository interfaces.
+2025-06-20 19:21:52 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-20 19:21:52 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-20 19:21:52 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-06-20 19:21:52 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-20 19:21:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2602 ms
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.addActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.deleteActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.MatchActivityName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListfuzzy] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.fuzzySearchByName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.MatchBuildingName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:21:53 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
+2025-06-20 19:21:53 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 28 mappings in 'requestMappingHandlerMapping'
+2025-06-20 19:21:53 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2025-06-20 19:21:53 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-20 19:21:53 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-20 19:21:54 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
+2025-06-20 19:21:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-20 19:21:55 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 5.932 seconds (process running for 6.618)
+2025-06-20 19:21:58 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 19:21:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-20 19:21:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-20 19:21:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-20 19:21:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-20 19:21:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4f897f28
+2025-06-20 19:21:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@625baf2e
+2025-06-20 19:21:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-20 19:21:58 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-06-20 19:21:58 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/activitiesbuildingnum?buildingname=%E4%B8%AD%E9%A3%9E%E9%99%A21%E6%95%99", parameters={masked}
+2025-06-20 19:21:58 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.BuildingListController#activitiesbuildingnum(String)
+2025-06-20 19:21:58 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-20 19:21:59 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@283d999e
+2025-06-20 19:21:59 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-20 19:21:59 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-06-20 19:21:59 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[三星堆志愿活动, 555, 666]]
+2025-06-20 19:21:59 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-20 19:23:32 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20 19:23:32 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-20 19:23:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-20 19:23:32 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-20 19:23:39 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 16792 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
+2025-06-20 19:23:39 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
+2025-06-20 19:23:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-20 19:23:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-20 19:23:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2025-06-20 19:23:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-20 19:23:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-20 19:23:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-06-20 19:23:42 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-20 19:23:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2590 ms
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.addActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.deleteActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.MatchActivityName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListfuzzy] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.fuzzySearchByName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.MatchBuildingName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:23:42 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
+2025-06-20 19:23:43 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 28 mappings in 'requestMappingHandlerMapping'
+2025-06-20 19:23:43 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2025-06-20 19:23:43 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-20 19:23:43 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-20 19:23:44 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
+2025-06-20 19:23:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-20 19:23:44 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 6.224 seconds (process running for 6.969)
+2025-06-20 19:23:48 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 19:23:48 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-20 19:23:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-20 19:23:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-20 19:23:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-20 19:23:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@68c9dffb
+2025-06-20 19:23:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@55851301
+2025-06-20 19:23:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-20 19:23:48 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-20 19:23:48 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/activitiesbuildingnum?buildingname=%E4%B8%AD%E9%A3%9E%E9%99%A21%E6%95%99", parameters={masked}
+2025-06-20 19:23:48 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.BuildingListController#activitiesbuildingnum(String)
+2025-06-20 19:23:48 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-20 19:23:49 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a578942
+2025-06-20 19:23:49 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-20 19:23:49 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-06-20 19:23:49 [http-nio-8080-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Activity(id=1, buildingId=1, AcquisitionName=三星堆志愿活动, time=2025.6.15), Activity(id=3, buildingId=1, (truncated)...]
+2025-06-20 19:23:49 [http-nio-8080-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-20 19:24:16 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20 19:24:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-20 19:24:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-20 19:24:17 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-06-20 19:43:36 [main] INFO  com.cafuc.icfb.ICFBApplication - Starting ICFBApplication using Java 17.0.12 with PID 8648 (C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes started by 86178 in C:\Users\86178\Desktop\挑战杯\ICFB-master)
+2025-06-20 19:43:36 [main] INFO  com.cafuc.icfb.ICFBApplication - The following 1 profile is active: "dev"
+2025-06-20 19:43:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-06-20 19:43:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-06-20 19:43:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+2025-06-20 19:43:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-06-20 19:43:39 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-06-20 19:43:39 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-06-20 19:43:39 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-06-20 19:43:39 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2542 ms
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.getActivitiesList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.addActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.deleteActivity] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.ActivityDao.MatchActivityName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListAll] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.addBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.deleteBuilding] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingByName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.getBuildingListfuzzy] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.fuzzySearchByName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.BuildingDao.MatchBuildingName] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserList] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserByUaP] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.deleteUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.addUser] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:39 [main] ERROR c.b.m.core.MybatisConfiguration - mapper[com.cafuc.icfb.DAO.UserDao.getUserById] is ignored, because it exists, maybe from xml file
+2025-06-20 19:43:40 [main] INFO  o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.cafuc.icfb.Interceptor.IpInterceptor.logger
+2025-06-20 19:43:40 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 28 mappings in 'requestMappingHandlerMapping'
+2025-06-20 19:43:40 [main] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+2025-06-20 19:43:40 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-06-20 19:43:40 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-06-20 19:43:41 [main] DEBUG o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates/]] resolved to file path [C:\Users\86178\Desktop\挑战杯\ICFB-master\target\classes\templates]
+2025-06-20 19:43:41 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-06-20 19:43:41 [main] INFO  com.cafuc.icfb.ICFBApplication - Started ICFBApplication in 6.14 seconds (process running for 6.846)
+2025-06-20 19:43:45 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-20 19:43:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-20 19:43:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-20 19:43:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-20 19:43:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-20 19:43:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6a1ce797
+2025-06-20 19:43:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@49e69e8e
+2025-06-20 19:43:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-20 19:43:45 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-06-20 19:43:45 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/activitiesbuildingnum?buildingname=%E4%B8%AD%E9%A3%9E%E9%99%A21%E6%95%99", parameters={masked}
+2025-06-20 19:43:45 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.cafuc.icfb.controller.BuildingListController#activitiesbuildingnum(String)
+2025-06-20 19:43:45 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-06-20 19:43:46 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c55097
+2025-06-20 19:43:46 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-06-20 19:43:46 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7] and supported [application/json, application/*+json]
+2025-06-20 19:43:46 [http-nio-8080-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [[Activity(id=1, buildingId=1, AcquisitionName=三星堆志愿活动, time=2025.6.15), Activity(id=3, buildingId=1, (truncated)...]
+2025-06-20 19:43:46 [http-nio-8080-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-20 19:43:57 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-20 19:43:57 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-06-20 19:43:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-06-20 19:43:57 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

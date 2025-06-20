@@ -15,11 +15,10 @@ public class BuildingDelController {
     @Autowired
     private BuildingService buildingService;
 
-    @GetMapping("/DeleteBuilding")
+    @GetMapping("/deletebuilding")
     public ModelAndView delBuilding(@RequestParam String buildname) {
-
         if(buildingService.WorkoutService(buildname)==1) {
-            ModelAndView modelAndView = new ModelAndView("login");
+            ModelAndView modelAndView = new ModelAndView("center");
             return modelAndView;
         }
         else{

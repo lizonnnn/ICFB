@@ -1,11 +1,9 @@
 package com.cafuc.icfb.controller;
 
+import com.cafuc.icfb.DAO.BuildingDao;
 import com.cafuc.icfb.entity.Building;
 import com.cafuc.icfb.service.BuildingService;
-import com.cafuc.icfb.service.UserService;
-import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,14 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class BuildingSearchController {
+public class BuildingMotifyController {
     @Autowired
     BuildingService buildingService;
-    @RequestMapping("/buildingsearch")
+    @RequestMapping("/modifybuilding")
+    public Integer BuildingModify(@RequestParam("buildname") String buildname,
+                                  @RequestParam("introduction") String introduction) {
 
-    public List<Building> BuildingSearch(@RequestParam int page, @RequestParam int pagesize){
-        List<Building> buildingList = buildingService.BuildingSearchService(page, pagesize);
-        return buildingList;
+        return buildingService.BuildingModifyService(buildname,introduction);
     }
-
 }

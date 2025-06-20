@@ -19,4 +19,20 @@
     <delete id="deleteBuilding" parameterType="String">
         delete from building where build_name=#{buildname};
     </delete>
+    <select id="getBuildingByName" resultType="com.cafuc.icfb.entity.Building">
+        select * from building where build_name = #{buildingname};
+    </select>
+    <select id="getBuildingListfuzzy" resultType="com.cafuc.icfb.entity.Building">
+        SELECT * FROM building
+        WHERE build_name LIKE CONCAT('%', #{buildName}, '%')
+        LIMIT #{pagesize} OFFSET #{offset}
+    </select>
+    <select id="fuzzySearchByName" resultType="com.cafuc.icfb.entity.Building">
+        SELECT * FROM building
+        WHERE build_name LIKE CONCAT('%', #{buildName}, '%')
+    </select>
+    <select id="MatchBuildingName" resultType="String">
+        SELECT build_name FROM building
+        WHERE id = #{buildingId}
+    </select>
 </mapper>
