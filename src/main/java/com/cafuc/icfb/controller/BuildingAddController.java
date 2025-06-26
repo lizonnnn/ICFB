@@ -20,7 +20,7 @@ public class BuildingAddController {
     @Autowired
     BuildingService buildingService;
 
-    @RequestMapping("/buildingadd")
+    @RequestMapping("/addbuilding")
     public ModelAndView buildingadd(
             @RequestParam("buildname") String buildname,
             @RequestParam("introduction") String introduction) {

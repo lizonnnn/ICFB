@@ -12,4 +12,5 @@ public interface ActivityDao {
     Integer addActivity(Integer buildingid, String acquisitionname, String time);
     Integer deleteActivity(String acquisitionname);
     List<Activity> MatchActivityName(int buildingId);
+    Integer getActivityId(String acquisitionname);
 }

@@ -19,5 +19,6 @@
         <mapper resource="mapper/UserDao.xml"/>
         <mapper resource="mapper/BuildingDao.xml"/>
         <mapper resource="mapper/ActivityDao.xml"/>
+        <mapper resource="mapper/CDataDao.xml"/>
     </mappers>
 </configuration>

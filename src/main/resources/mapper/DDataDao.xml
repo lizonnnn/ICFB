@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.cafuc.icfb.DAO.DDataDao">
+    <!--select查询语句-->
+    <select id="getDDataListAll" resultType="com.cafuc.icfb.entity.DData">
+        select * from discriminant_data;
+    </select>
+    <insert id="addDData">
+        INSERT INTO discriminant_data (capture_id, internal_number, url)
+        VALUES (#{param1}, #{param2}, #{param3});
+    </insert>
+    <delete id="deleteDData" parameterType="String">
+        delete from discriminant_data where url=#{url};
+    </delete>
+    <select id="getDDataList" resultType="com.cafuc.icfb.entity.DData">
+        SELECT * FROM discriminant_data
+        LIMIT #{pagesize} OFFSET #{offset};
+    </select>
+</mapper>

@@ -1,5 +1,10 @@
 package com.cafuc.icfb.service;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import com.cafuc.icfb.DAO.ActivityDao;
@@ -39,21 +44,62 @@ public class ActivityService {
                 return 0;
             }
         }
-        return activityDao.addActivity(buildingid, acquisitionname, time); // 插入成功返回 1
+        Integer result = activityDao.addActivity(buildingid, acquisitionname, time);
+        if (result > 0) {
+            try {
+                // 定义文件夹路径
+                String basePath = "C:\\Users\\86178\\Desktop\\挑战杯\\ICFB-master\\src\\main\\resources\\static\\collectimg";
+                String folderName = Integer.toString(activityDao.getActivityId(acquisitionname)); // 直接使用活动名称作为文件夹名
+                File folder = new File(Paths.get(basePath, folderName).toString());
+                // 创建文件夹（如果不存在）
+                if (!folder.exists()) {
+                    boolean created = folder.mkdir();
+                    if (!created) {
+                        System.err.println("Failed to create directory: " + folder.getAbsolutePath());
+                    }
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return result;
+    }
+
+    // 递归删除目录 以及 其中内容
+    private boolean deleteDirectory(File directory) {
+        if (directory.isDirectory()) {
+            File[] files = directory.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    deleteDirectory(file);
+                }
+            }
+        }
+        return directory.delete();
     }
 
     public Integer WorkoutService(String Acquisitionname) {
-        return activityDao.deleteActivity(Acquisitionname);
+        try {
+            // 定义文件夹路径
+            String basePath = "C:/Users/86178/Desktop/挑战杯/ICFB-master/src/main/resources/static/collectimg";
+            String folderName = Integer.toString(activityDao.getActivityId(Acquisitionname));
+            File folder = new File(Paths.get(basePath, folderName).toString());
+
+            // 删除文件夹（如果存在）
+            if (folder.exists() && folder.isDirectory()) {
+                boolean deleted = deleteDirectory(folder);
+                if (!deleted) {
+                    System.err.println("文件夹删除失败: " + folder.getAbsolutePath());
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            // 即使文件夹删除失败，也不影响数据库操作结果
+        }
+
+        Integer result = activityDao.deleteActivity(Acquisitionname);
+
+        return result;
     }
 
-//    public List<String> matchBuilding(String acquisitionname) {
-//        List<Activity> activitiesList = activityDao.getActivitiesListAll();
-//        List<String> temp = new ArrayList<>();
-//        for (Activity i : activitiesList){
-//            if(i.getAcquisitionName().equals(acquisitionname)){
-//                temp = buildingDao.MatchBuildingName(i.getBuildingId());
-//            }
-//        }
-//        return temp;
-//    }
 }

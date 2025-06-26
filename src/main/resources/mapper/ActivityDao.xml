@@ -23,4 +23,8 @@
         SELECT * FROM capture_activities
         WHERE building_id = #{buildingId}
     </select>
+    <select id="getActivityId" resultType="Integer">
+        SELECT id FROM capture_activities
+        WHERE Acquisition_name = #{acquisitionname}
+    </select>
 </mapper>
