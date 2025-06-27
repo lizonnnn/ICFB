@@ -13,13 +13,16 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestOperations;
 import org.springframework.web.multipart.MultipartFile;
-
+import lombok.extern.slf4j.Slf4j;
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @Service
 public class CDataService {
@@ -33,6 +36,14 @@ public class CDataService {
     RestOperations restTemplate;
     @Value("${file.upload.path}")
     private String uploadPath;
+
+    private static final Logger log = LoggerFactory.getLogger(CDataService.class);
+
+    public void someMethod() {
+        log.info("This is a log message");
+    }
+
+
     public Integer addcdataconrebuild(Integer captureid,
                                       Integer internalnumber,
                                       MultipartFile photo){
@@ -74,22 +85,22 @@ public class CDataService {
         for (Activity u : activitiesList) {
             if (u.getId() == captureid) {
                 cDataDao.addCData(captureid, internalnumber, url);
-                String updateurl="http://192.168.110.194:5000/processimg?url="+url;
-                InputStream inputStream = restTemplate.execute(
-                        updateurl,
-                        HttpMethod.GET,
-                        null,
-                        response -> response.getBody()
-                );
-                BufferedImage bi;
-                // 转换为BufferedImage
-                try {
-                    bi=ImageIO.read(inputStream);
-                    dDataDao.addDData(captureid, internalnumber, url);
-
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
+//                String updateurl="http://192.168.110.194:5000/processimg?url="+url;
+//                InputStream inputStream = restTemplate.execute(
+//                        updateurl,
+//                        HttpMethod.GET,
+//                        null,
+//                        response -> response.getBody()
+//                );
+//                BufferedImage bi;
+//                // 转换为BufferedImage
+//                try {
+//                    bi=ImageIO.read(inputStream);
+//                    dDataDao.addDData(captureid, internalnumber, url);
+//
+//                } catch (IOException e) {
+//                    throw new RuntimeException(e);
+//                }
                 return 1;
 //                String updateurl="http://192.168.110.194:5000/processimg?url=/1/111.jpg";
 //                Integer i=1;
@@ -100,8 +111,30 @@ public class CDataService {
         return 0;
     }
 
-    public int WorkoutService(String url) {
-        return cDataDao.deleteCData(url);
+    public int WorkoutService(int internalnumber) {
+        String imageUrl = cDataDao.GetCDataUrlByinternalnumber(internalnumber);
+        if (imageUrl != null){
+            try {
+                // 转换URL路径为物理路径（与addcdataconrebuild逻辑对应）
+                String filePath = uploadPath +
+                        imageUrl.replace("\\images", "\\"+cDataDao.GetCaptureidByinternalnumber(internalnumber))
+                                .replace("\\", File.separator);
+
+                File file = new File(filePath);
+                if (file.exists()) {
+                    if (file.delete()) {
+                        log.info("图片删除成功: {}", filePath);
+                    } else {
+                        log.warn("图片删除失败: {}", filePath);
+                    }
+                } else {
+                    log.warn("图片文件不存在: {}", filePath);
+                }
+            } catch (Exception e) {
+                log.error("删除图片文件时出错", e);
+            }
+        }
+        return cDataDao.deleteCData(internalnumber);
     }
 
     public List<CData> CDataSearchService(int page, int pagesize) {

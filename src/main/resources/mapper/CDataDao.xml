@@ -8,12 +8,18 @@
     <select id="getCDataListAll" resultType="com.cafuc.icfb.entity.CData">
         select * from collect_data;
     </select>
+    <select id="GetCDataUrlByinternalnumber" parameterType="int">
+        select url from collect_data where internal_number=#{internalnumber};
+    </select>
+    <select id="GetCaptureidByinternalnumber" parameterType="int">
+        select capture_id from collect_data where internal_number=#{internalnumber};
+    </select>
     <insert id="addCData">
         INSERT INTO collect_data (capture_id, internal_number, url)
         VALUES (#{param1}, #{param2}, #{param3});
     </insert>
-    <delete id="deleteCData" parameterType="String">
-        delete from collect_data where url=#{url};
+    <delete id="deleteCData" parameterType="int">
+        delete from collect_data where internal_number=#{internalnumber};
     </delete>
     <select id="getCDataList" resultType="com.cafuc.icfb.entity.CData">
         SELECT * FROM collect_data

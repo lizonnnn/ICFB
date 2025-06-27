@@ -15,25 +15,26 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
-@Controller
+@RestController
 public class BuildingAddController {
     @Autowired
     BuildingService buildingService;
 
     @RequestMapping("/addbuilding")
-    public ModelAndView buildingadd(
+    public Integer buildingadd(
             @RequestParam("buildname") String buildname,
             @RequestParam("introduction") String introduction) {
 
-        Integer result = buildingService.addBuilding(buildname,introduction);
-
-        if (result == 1) {
-            return new ModelAndView("center");
-        } else {
-            ModelAndView mv = new ModelAndView("buildingadd");
-            mv.addObject("error", "此建筑已存在！");
-            return mv;
-        }
+        return buildingService.addBuilding(buildname,introduction);
+//        Integer result = buildingService.addBuilding(buildname,introduction);
+//
+//        if (result == 1) {
+//            return new ModelAndView("center");
+//        } else {
+//            ModelAndView mv = new ModelAndView("buildingadd");
+//            mv.addObject("error", "此建筑已存在！");
+//            return mv;
+//        }
     }
 
 }

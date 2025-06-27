@@ -9,8 +9,10 @@ import java.util.List;
 
 @Mapper
 public interface CDataDao {
+    String GetCDataUrlByinternalnumber(int internalnumber);
     List<CData> getCDataListAll();
     Integer addCData(Integer captureid, Integer internalnumber, String url);
-    int deleteCData(String url);
+    int deleteCData(int internalnumber);
     List<CData> getCDataList(int pagesize, int offset);
+    int GetCaptureidByinternalnumber(int internalnumber);
 }
